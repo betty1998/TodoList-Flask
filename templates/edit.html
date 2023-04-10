@@ -1,0 +1,13 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Beibei's ToDo App</title>
+  </head>
+  <body>
+    <form action = "{{ url_for('edit', id = id)}}" method = "post">
+        <input type = "text" name = "todo" value = {{todo["Task"]}}>
+        <button type = "submit"> Save </button>
+    </form>
+  </body>
+</html>
